@@ -11,6 +11,10 @@
 
 int main(int argc, char **argv)
 {
+    if(argc<=1)
+    {
+        return -1;
+    }
     unsigned char* pHeader = argv[1];
     unsigned int Size = strlen(argv[1]);
       
