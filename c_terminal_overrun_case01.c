@@ -64,11 +64,10 @@ unsigned int test26_c(MY_Packet_S *pPacket, unsigned char *pID)
 
 int main(int argc, char **argv)
 {
-    if(argc<3)
+    if(argc>=3)
     {
-        return -1;
+        test26_c((MY_Packet_S *)argv[2], argv[1]);
     }
-    test26_c((MY_Packet_S *)argv[2], argv[1]);
 }
 
 
