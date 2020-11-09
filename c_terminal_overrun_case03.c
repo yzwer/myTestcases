@@ -12,7 +12,7 @@
         1. 通过recv获取，没有显式加尾0
         2. 给其它函数拷贝
 */
-extern int recv(int, char*, int, int);
+//extern int recv(int, char*, int, int);
 void test02_cpp()
 {
     char data[255] = {0};
