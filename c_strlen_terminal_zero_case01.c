@@ -8,7 +8,7 @@
 /*
     34、streln结果用于字符串数组下标，且进行写操作，导致尾0被覆盖丢失
 */
-void test29_c(char *pList)
+void test29_c2(char *pList)
 {
     unsigned int strLen = 0;
     char *pEnd = NULL;
@@ -27,7 +27,7 @@ void test29_c(char *pList)
 
 int main(int argc, char **argv)
 {
-    test29_c(argv[1]);
+    test29_c2(argv[1]);
 }
 
 
