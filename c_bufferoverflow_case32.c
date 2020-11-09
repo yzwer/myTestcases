@@ -28,12 +28,13 @@ int main(int argc, char **argv)
         uTotalLen += uLen; //Integer overflow
         if (uTotalLen > 20 || 0 == uLen)
         {
-            return;
+            return -1;
         }
         
         /* POTENTIAL FLAW: Pointer offset comes from external input, and reading after offset leads to out-of-bounds read.*/
         pData += uLen;
         uType = *(pData-1);// OUT-OF-BOUNDS READ
     }
+    return 0;
 }
 
