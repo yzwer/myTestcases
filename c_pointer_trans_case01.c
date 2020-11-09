@@ -10,8 +10,13 @@
     36、指针强转为整型，可能存在地址截断
         指针强转为整型，可能存在地址截断
 */
-void test29_c(char * pStart, char * pEnd)
+
+
+int main(int argc, char **argv)
 {
+    char * pStart = argv[1];
+    char * pEnd = argv[2];
+    
     int i = 0;
     
     /* POTENTIAL FLAW: 指针强转为整型，可能存在地址截断 */
@@ -20,13 +25,6 @@ void test29_c(char * pStart, char * pEnd)
         i++;
         break;
     }
-
-}
-
-
-int main(int argc, char **argv)
-{
-    test29_c(argv[1], argv[2]);
 }
 
 
