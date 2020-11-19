@@ -3,6 +3,7 @@
 #include <stdint.h>
 #include <string.h>
 #include <sys/types.h>
+#include "securec_def.h"
 
 /*
 4、strlen计算结果用于整数运算，存在整数溢出
