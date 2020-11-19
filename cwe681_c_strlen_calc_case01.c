@@ -25,6 +25,6 @@ void test04_c(char* src)
 int main()
 {
 	char * p = "aa";
-	test04_c(p, strlen(p));
+	test04_c(p);
 	return 0;
 }
