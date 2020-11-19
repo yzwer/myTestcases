@@ -4,7 +4,7 @@
 #include <string.h>
 #include <sys/types.h>
 //#include "securec_def.h"
-errno_t memcpy_s(void* dest, size_t destMax, const void* src, size_t count);
+unsigned int memcpy_s(void* dest, size_t destMax, const void* src, size_t count);
 /*
 4、strlen计算结果用于整数运算，存在整数溢出
 */
