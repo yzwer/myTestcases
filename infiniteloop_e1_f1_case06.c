@@ -24,7 +24,7 @@ void test24_c(const char *aucAttr)
 
 int main()
 {
-	unsigned char *aucAttr = "if loop count max than 255, it will be a interger overflow, may cause infinite loop - > len is 100.if loop count max than 255, it will be a interger overflow, may cause infinite loop - > len is 100.123132132132123132132132132123132";
+	unsigned char *aucAttr = "if loop count max than 255, it will be a interger overflow, may cause infinite loop - > len is 100.if loop count max than 255, it will be a interger overflow, may cause infinite loop - > len is 100.123132132132123132132132132123132123132132132123132132132132123132123132132132123132132132132123132123132132132123132132132132123132";
 	test24_c(aucAttr);
 	return 0;
 }
